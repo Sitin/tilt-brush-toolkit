@@ -22,5 +22,6 @@ setup(
     license='Apache-2.0',
     packages=['tiltbrush'],
     test_suite='nose.collector',
-    tests_require=['nose']
+    tests_require=['nose'],
+    scripts=['bin/tilt_to_json.py']
 )

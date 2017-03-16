@@ -34,6 +34,7 @@ pip install -e Python/
  * `Python` - All python scripts are collected here
    * `bin` - command-line tools (not published within the package yet)
      * `dump_tilt.py` - Sample code that uses the tiltbrush.tilt module to view raw Tilt Brush data.
+     * `tilt_to_json.py` - Sample code that converts a .tilt file to A-Painter JSON format.
      * `geometry_json_to_fbx.py` - Historical sample code that converts Tilt Brush .json exports to .fbx. This script is superseded by Tilt Brush native .fbx exports.
      * `geometry_json_to_obj.py` - Historical sample code that converts Tilt Brush .json exports to .obj. This script is superseded by Tilt Brush native .fbx exports.
      * `tilt_to_strokes_dae.py` - Converts .tilt files to a Collada .dae containing spline data.
@@ -42,3 +43,11 @@ pip install -e Python/
      * `export.py` - Parse the legacy .json export format
      * `tilt.py` - Read and write .tilt files
      * `unpack.py` - Convert .tilt files from packed format to unpacked format and vice versa
+     
+### Tilt To A-Painter JSON
+
+This will convert Til Brush file to [A-Painter](https://github.com/aframevr/a-painter) JSON format.
+
+```sh
+Python/bin/tilt_to_json.py Python/tests/data/sketch1.tilt
+```
